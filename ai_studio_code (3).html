@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 1 Sumenep</title>
+    <!-- Google Fonts: Poppins untuk Heading, Inter untuk Text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',    /* Warna Navy Modern */
+                        navyLight: '#1e293b',
+                        gold: '#f59e0b'     /* Warna Emas/Kuning Aksen */
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-poppins { font-family: 'Poppins', sans-serif; }
+        /* Efek overlay untuk gambar hero */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer">
+                    <!-- Ganti ikon ini dengan tag <img> logo sekolah yang asli -->
+                    <i class="fa-solid fa-graduation-cap text-gold text-3xl"></i>
+                    <div>
+                        <h1 class="font-poppins font-bold text-xl tracking-wide leading-tight">SMAN 1</h1>
+                        <p class="text-xs text-gray-300 tracking-widest">SUMENEP</p>
+                    </div>
+                </div>
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8 items-center font-poppins text-sm font-semibold">
+                    <a href="#" class="hover:text-gold transition">Beranda</a>
+                    <a href="#profil" class="hover:text-gold transition">Profil</a>
+                    <a href="#akademik" class="hover:text-gold transition">Akademik</a>
+                    <a href="#ekskul" class="hover:text-gold transition">Ekskul</a>
+                    <!-- Tombol PPDB Menonjol -->
+                    <a href="#ppdb" class="bg-gold text-navy px-5 py-2 rounded-full hover:bg-yellow-400 transition transform hover:scale-105">Info PPDB</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg text-white py-32 md:py-48 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-6 inline-block">Sekolah Favorit</span>
+            <h2 class="font-poppins text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Wujudkan Masa Depan Gemilang Bersama Kami
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-inter max-w-2xl mx-auto">
+                Mencetak insan berakhlak mulia, unggul dalam prestasi, menjunjung kearifan lokal Sumenep, dan siap bersaing di kancah global.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#ppdb" class="bg-gold text-navy font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition shadow-lg text-lg">
+                    Daftar Sekarang
+                </a>
+                <a href="#profil" class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-navy transition shadow-lg text-lg">
+                    Jelajahi Profil
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="profil" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="font-poppins text-3xl font-bold text-navy mb-4">Mengapa Memilih SMAN 1 Sumenep?</h3>
+            <div class="w-24 h-1 bg-gold mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center border-b-4 border-navy">
+                <div class="w-16 h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h4 class="font-poppins font-bold text-xl mb-3 text-navy">Akhlak Mulia</h4>
+                <p class="text-gray-600 text-sm">Pendidikan karakter dan spiritual menjadi pondasi utama kami dalam mendidik generasi penerus.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center border-b-4 border-gold">
+                <div class="w-16 h-16 bg-yellow-50 text-gold rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+                <h4 class="font-poppins font-bold text-xl mb-3 text-navy">Prestasi Akademik</h4>
+                <p class="text-gray-600 text-sm">Kurikulum modern yang berfokus pada pemahaman mendalam dan persiapan masuk Perguruan Tinggi Negeri.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center border-b-4 border-navy">
+                <div class="w-16 h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h4 class="font-poppins font-bold text-xl mb-3 text-navy">Kearifan Lokal</h4>
+                <p class="text-gray-600 text-sm">Menjunjung tinggi nilai budaya dan tradisi Sumenep sebagai identitas diri di tengah modernisasi.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center border-b-4 border-gold">
+                <div class="w-16 h-16 bg-yellow-50 text-gold rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h4 class="font-poppins font-bold text-xl mb-3 text-navy">Wawasan Global</h4>
+                <p class="text-gray-600 text-sm">Membekali siswa dengan kemampuan bahasa asing dan IT untuk siap bersaing di kancah internasional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTIK SECTION (Navy Background) -->
+    <section class="bg-navy py-16 px-4 text-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-gray-600">
+            <div class="py-4">
+                <h3 class="font-poppins text-5xl font-bold text-gold mb-2">95%</h3>
+                <p class="text-gray-300 font-medium">Lulusan Diterima PTN</p>
+            </div>
+            <div class="py-4">
+                <h3 class="font-poppins text-5xl font-bold text-gold mb-2">30+</h3>
+                <p class="text-gray-300 font-medium">Ekstrakurikuler Aktif</p>
+            </div>
+            <div class="py-4">
+                <h3 class="font-poppins text-5xl font-bold text-gold mb-2">150+</h3>
+                <p class="text-gray-300 font-medium">Prestasi Tahun Ini</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EKSTRAKURIKULER SECTION -->
+    <section id="ekskul" class="py-20 px-4 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h3 class="font-poppins text-3xl font-bold text-navy mb-3">Kehidupan Sekolah</h3>
+                    <p class="text-gray-600 max-w-xl">Temukan minat dan bakatmu di luar jam pelajaran melalui puluhan ekstrakurikuler pilihan kami.</p>
+                </div>
+                <a href="#" class="hidden sm:inline-block text-navy font-bold hover:text-gold transition">Lihat Semua <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Ekskul Card -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1576267423048-15c0040fec78?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pramuka" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h4 class="text-white font-poppins font-bold text-xl">Pramuka</h4>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Basket" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h4 class="text-white font-poppins font-bold text-xl">Bola Basket</h4>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Seni Tari" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h4 class="text-white font-poppins font-bold text-xl">Seni Tari Tradisional</h4>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Karya Ilmiah" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h4 class="text-white font-poppins font-bold text-xl">Karya Ilmiah Remaja</h4>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="sm:hidden block mt-8 text-center bg-navy text-white py-3 rounded-full font-bold">Lihat Semua Ekstrakurikuler</a>
+        </div>
+    </section>
+
+    <!-- PPDB CALL TO ACTION -->
+    <section id="ppdb" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto bg-navy rounded-3xl p-8 md:p-16 text-center shadow-2xl relative overflow-hidden">
+            <!-- Dekorasi background -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-gold opacity-10 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+            
+            <h2 class="font-poppins text-3xl md:text-5xl font-bold text-white mb-6 relative z-10">Siap Menjadi Bagian dari SMAN 1 Sumenep?</h2>
+            <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto relative z-10">Pendaftaran Peserta Didik Baru (PPDB) Tahun Ajaran 2027/2028 akan segera dibuka. Pantau terus informasi terbarunya!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                <a href="#" class="bg-gold text-navy font-bold py-4 px-10 rounded-full hover:bg-yellow-400 transition shadow-lg text-lg">
+                    Info PPDB 2027
+                </a>
+                <a href="#" class="bg-white/10 text-white font-bold py-4 px-10 rounded-full hover:bg-white/20 transition backdrop-blur-sm text-lg">
+                    Hubungi Admin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navyLight text-gray-300 py-12 px-4 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-graduation-cap text-gold text-2xl"></i>
+                    <h2 class="font-poppins font-bold text-xl text-white">SMAN 1 SUMENEP</h2>
+                </div>
+                <p class="text-sm mb-4">Mencetak insan berakhlak mulia, unggul, dan berwawasan global.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-gold text-xl transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold text-xl transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold text-xl transition"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold text-xl transition"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-poppins font-bold mb-4">Tautan Cepat</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-gold transition">Tentang Sekolah</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Visi & Misi</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Direktori Guru</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Galeri Prestasi</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-poppins font-bold mb-4">Akademik</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-gold transition">Jadwal Pelajaran</a></li>
+                    <li><a href="#" class="hover:text-gold transition">E-Learning</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Perpustakaan Digital</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Kalender Akademik</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-poppins font-bold mb-4">Kontak Kami</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-gold"></i>
+                        <span>Jl. Payudan Barat No.1, Pabian, Kec. Kota Sumenep, Kabupaten Sumenep, Jawa Timur 69415</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-gold"></i>
+                        <span>(0328) 123456</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-gold"></i>
+                        <span>info@sman1sumenep.sch.id</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8 text-center text-sm">
+            <p>&copy; 2026 SMA Negeri 1 Sumenep. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
